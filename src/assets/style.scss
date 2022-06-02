@@ -1,0 +1,506 @@
+$main_color: rgb(204, 211, 227);
+
+@font-face {
+    font-family: myFontName;
+    src: url("../Flecha_L_Regular.otf");
+}
+
+* {
+    font-family: myFontName, sans-serif;
+}
+
+.fade-enter-from{
+    opacity: 0;
+}
+.fade-enter-active{
+    transition:all 1s;
+}
+.fade-enter-to{
+    opacity: 1;
+}
+
+#wrap {
+    width: 100%;
+
+    .container {
+        margin: 0 auto;
+
+        header {
+            height: 836px;
+            padding-top: 58px;
+            background-color: #ccd3e3;
+
+            .head {
+                width: 1020px;
+
+                h1 {
+                    width: 153px;
+                    height: 36px;
+                    margin: 0 423px 113px 16px;
+                    background-image: url("../images/wefinLogo.svg");
+                }
+
+                .main {
+                    width: 600px;
+                    height: 330px;
+                    margin: 123px 0 107px 10px;
+                    padding: 0 28px 14px 0;
+                    font-size: 120px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 0.92;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #212529;
+
+                    p {
+                        width: 550px;
+                        height: 88px;
+                        font-family: Pretendard;
+                        font-size: 32px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #3a3c44;
+                    }
+                }
+            }
+        }
+
+        section {
+            background-color: #3a3c44;
+
+            .portfolio_list {
+                height: -webkit-fill-available;
+
+                ul {
+                    width: 100%;
+                    background-color: #3a3c44;
+
+                    img.opacity {
+                        width: 430px;
+                        position: absolute;
+                        z-index: 222;
+                        left: 50%;
+                        margin-left: 20%;
+                        top: -110px;
+                        opacity: 0;
+                        transition: all 1s;
+                    }
+                    li:hover img.opacity {
+                        opacity: 1;  
+                    }
+
+                    li {
+                        height: 100px;
+                        position: relative;
+                        &:hover a{
+                            color: #fff;
+                        }
+                        a {
+                            position: relative;
+                            margin: 0 auto;
+                            width: 995px;
+                            display: block;
+                            height: 43px;
+                            font-size: 38px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            line-height: 110px;
+                            color: #6a6c71;
+                            transition:all 0.5s;
+                            z-index: 1000;
+
+                        }
+
+                        span {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            margin-left: -15px;
+                            margin-top: 20px;
+                            width: 12px;
+                            height: 12px;
+                            flex-grow: 0;
+                            font-family: Pretendard;
+                            font-size: 13px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #9c762c;
+                        }
+
+                        &:after {
+                            content: '';
+                            clear: both;
+                            width: 100%;
+                            height: 1px;
+                            position: absolute;
+                            left: 50%;
+                            margin-left: -50%;
+                            bottom: 0;
+                            background-color: #5f6167;
+                        }
+                    }
+                }
+            }
+
+            .about {
+                position: relative;
+                height: 537px;
+                flex-grow: 0;
+                background-color: #cbd3e2;
+                padding: 0.1px;
+            }
+        }
+
+        footer {
+            height: 465px;
+            background-color: #feb114;
+
+            .contact {
+                width: 1000px;
+                padding-top: 153px;
+
+                h2 {
+                    position: relative;
+                    font-size: 90px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 0.33;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #000;
+
+                    &:after {
+                        content: '';
+                        clear: both;
+                        width: 183px;
+                        height: 1px;
+                        background-color: #000;
+                        position: absolute;
+                        top: 45%;
+                        left: 50%;
+                        margin-left: -100px;
+                    }
+                }
+
+                ul {
+                    margin-top: 80px;
+                    display: flex;
+
+                    li {
+                        width: 200px;
+                        color: #000;
+                        font-family: 'pretendard';
+                        font-size: 12px;
+                        line-height: 30px;
+
+                        &:nth-child(2) {
+                            width: 160px;
+                        }
+
+                        a {
+                            font-family: 'pretendard';
+                            font-weight: 500;
+                            font-size: 15px;
+                            display: block;
+                            color: #000;
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+        .txt {
+                width: 1000px;
+            .OUR-CULTURE {
+                display: block;
+                margin-top: 140px;
+                margin-bottom: 34px;
+                width: 120px;
+                height: 30px;
+                flex-grow: 0;
+                font-family: Pretendard;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000;
+            }
+
+            .No-finishied-work {
+                width: 811px;
+                height: 105px;
+                flex-grow: 0;
+                font-size: 120px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                font-family: pretendard;
+                color: #000;
+                position: absolute;
+                width: 820px;
+                height: 140px;
+            }
+
+            .more {
+                position: absolute;
+                bottom: -300px;
+                right: -335px;
+                width: 140px;
+                height: 140px;
+                flex-grow: 0;
+                background-color: #fff;
+                border-radius: 140px;
+                color: #000;
+                line-height: 140px;
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+article {
+
+    background-color: #ccd3e2;
+
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 57px;
+        position: relative;
+
+        h1 {
+            width: 154px;
+            height: 36px;
+            margin: 0 353px 49.9px 0;
+            background-image: url("../images/wefinLogo.svg");
+        }
+
+        .subTxt {
+            width: 500px;
+            height: 23px;
+            margin: 49.9px 197px 35px 0;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #262b2f;
+        }
+
+        h2 {
+            width: 450px;
+            height: 100px;
+            margin: 35px 76px 50px 0;
+            font-family: Pretendard;
+            font-size: 46px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.09;
+            letter-spacing: normal;
+            text-align: left;
+            color: #2f3338;
+        }
+
+        p {
+            width: 449px;
+            height: 240px;
+            margin: 50px 60px 32px 0;
+            font-family: Pretendard;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000;
+        }
+
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 503px;
+            height: 377px;
+            margin: 80px 0 0 60px;
+        }
+    }
+
+    .portSection_02 {
+        &:after {
+            background-color: #000;
+            opacity: 0.25;
+            content: '';
+            clear: both;
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        a {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -45px;
+            margin-top: -40px;
+            z-index: 1;
+        }
+
+        position: relative;
+        width: 100%;
+        height: 50.65vw;
+        margin-top: 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .portSection_03 {
+        height: 1600px;
+        background-color: #000;
+
+        .content {
+            width: 940px;
+            margin: 0 auto;
+            padding-top: 140px;
+
+            >p {
+                width: 719px;
+                height: 143px;
+                margin: 0 166px 58px 2px;
+                font-family: Pretendard;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.94;
+                letter-spacing: normal;
+                text-align: left;
+                color: #fff;
+            }
+
+            img {
+                width: 941px;
+                height: 706px;
+            }
+
+            .frame {
+                margin-top: 58px;
+
+                >span {
+                    width: 156px;
+                    height: 54px;
+                    font-family: Pretendard;
+                    font-size: 45px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #fff;
+                }
+
+                >p {
+                    width: 459px;
+                    height: 253px;
+                    float: right;
+                    font-size: 18px;
+                    font-family: 'pretendard';
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.94;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+
+h1 {
+    font-size: 120px;
+    line-height: 110px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #212529;
+}
+
+h2 {
+    font-size: 90px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #212529;
+}
+
+.fz {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.s-font {
+    font-family: 'pretendard';
+}
+
+.f-font {
+    font-family: myFontName, sans-serif;
+}
+
+.sr-only {
+    text-indent: -9999px;
+}
+
+.center {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
